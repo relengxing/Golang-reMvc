@@ -7,7 +7,7 @@ type staticRoute struct {
 }
 var StaticRoute staticRoute
 func init() {
-    StaticRoute = &staticRoute{}
+    StaticRoute = staticRoute{}
     StaticRoute.staticRouteList = make(map[string]string)
 }
 

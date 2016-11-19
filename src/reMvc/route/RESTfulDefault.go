@@ -36,7 +36,7 @@ func (this *RESTfulDefault)Transfer( w http.ResponseWriter,r *http.Request){
     case "OPTIONS":this.Child.Options()
     }
     this.Child.Finish()
-    this.Child.Render
+    this.Child.Render()
 }
 func (this *RESTfulDefault)Prepare(){
 

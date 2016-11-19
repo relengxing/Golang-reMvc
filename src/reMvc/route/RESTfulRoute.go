@@ -8,8 +8,8 @@ type rESTfulRoute struct {
 
 var RESTfulRoute rESTfulRoute
 func init() {
-    RESTfulRoute = &rESTfulRoute{}
-    RESTfulRoute.rESTfulRouteList = make(map[string]func(http.ResponseWriter, *http.Request))
+    RESTfulRoute = rESTfulRoute{}
+    RESTfulRoute.rESTfulRouteList = make(map[string]RESTfulDefault)
 }
 
 func (this *rESTfulRoute)SetRESTfulRouteDir(url string,restful RESTfulDefault)  {
